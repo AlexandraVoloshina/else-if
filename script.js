@@ -1,12 +1,12 @@
 var age = prompt("Сколько лет?");
-var smoke = prompt("Куришь?");
+var smoke = confirm("Куришь?");
 
-if (age<18 && smoke=="нет") 
+if (age<18 && smoke==false) 
 	{
 	alert("Так держать!");
-	} else if(age<18 && smoke=="да") {
+	} else if(age<18 && smoke==true) {
 		alert("Маме скажу!");
-			} else if(age>18 && smoke=="нет") {
+			} else if(age>18 && smoke==false) {
 				alert("Молодец, и не надо!");
 			} 	else 
 					alert("Ну и зря!");
